@@ -1,0 +1,39 @@
+<style>
+em {
+    color: #3DA3BD;
+}
+
+a {
+    color: #3EA3BD;
+}
+
+#footer-nav {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#header-nav {
+    color: #3A3A3A;
+}
+
+blockquote {
+    color: #57BCD6;
+}
+
+footer {
+    background-color: #3A3A3A;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+header {
+    background-color: #2C9AB7;
+}
+aside {
+    position:relative;
+    display: inline-block;
+    left:80%;
+}
+section {
+    position: relative;
+}
+</style>
