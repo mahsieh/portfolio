@@ -1,25 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Oswald&display=swap');    
+
 body {
     background-color: orchid;
 }
 p {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Oswald', sans-serif;
     color: blue;
 }
 
 img {
-    border-style: double;
-    border-color: cornflowerblue;
-    border-width: 5px;
-    width: 25%;
+    max-height: 100%;
+    overflow: hidden;
 }
 
 h1{
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family:'Noto Serif', serif;
     font-size:100%;
 }
 
 h2  {
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family:'Oswald', sans-serif;
     font-size:90%;
 }
 
@@ -65,4 +65,16 @@ a:hover {
 
 footer {
     background-color:salmon;
+}
+.box {
+    height: 400px;
+    width: 300px;
+    border: 1px dashed cornflowerblue;
+}
+
+.container {
+    display: flex;
+    flex-flow:row nowrap;
+    align-items:center;
+    justify-content:space-evenly;
 }
