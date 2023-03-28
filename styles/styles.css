@@ -1,16 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Oswald&display=swap');    
 
 body {
-    background-color: orchid;
+    background-color: whitesmoke;
 }
 p {
     font-family:'Oswald', sans-serif;
-    color: blue;
+    color: olive;
 }
 
 img {
     max-height: 100%;
     overflow: hidden;
+    transition: all 0.2s ease-in-out 1.5s;
+}
+
+img:hover {
+    transform: rotate(360deg);
 }
 
 h1{
@@ -32,8 +37,15 @@ ul {
     color: darkorchid
 }
 
-section{
-    color:aquamarine;
+ol li:nth-child(even) {
+    background-color:paleturquoise;
+}
+ol li:nth-child(odd) {
+    background-color:gainsboro;
+}
+
+section[class="Projects"] p::first-line {
+    text-decoration:overline;
 }
 
 article {
@@ -45,9 +57,13 @@ article {
 
 a {
     color:darkcyan;
+    transition: all 0.1s .8s;
+
 }
 
 a:visited {
+    font-size:0.5rem;
+    font-weight:900;
     color:darkgreen; 
 }
 
@@ -61,6 +77,8 @@ a:link {
 
 a:hover {
     color:red;
+    font-size:1.7rem;
+    font-weight:700;
 }
 
 footer {
@@ -69,7 +87,6 @@ footer {
 .box {
     height: 400px;
     width: 300px;
-    border: 1px dashed cornflowerblue;
 }
 
 .container {
