@@ -95,3 +95,170 @@ footer {
     align-items:center;
     justify-content:space-evenly;
 }
+
+/* Contact page styles */
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    box-sizing: border-box;
+    display: block;
+    margin: 1rem;
+}
+
+input[type=submit] {
+    width: 30%;
+    background-color: #1cff3a;
+}
+
+input:focus {
+    background-color: #7B006A;
+    outline: none;
+    color: #FFFFFF;
+}
+
+:required {
+    border-color: #800000;
+    border-width:3px;
+}
+
+:required:invalid {
+    border-color: #c00000;
+    border-style:double;
+}
+
+input {
+    border-radius: 5px;
+}
+
+fieldset {
+    border:none;
+}
+
+fieldset input {
+    display: inline;
+}
+
+.checkbox label {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-top: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border-color: #000000;
+    background-color: #eeeeee;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkmark:after {
+    display: block;
+}
+
+.checkbox .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg); 
+}
+
+.checkbox label:hover input ~ .checkmark {
+    background-color: #AAAAAA;
+}
+
+.checkbox input:checked ~ .checkmark {
+    background-color: tan;
+}
+
+.checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* radio button styles */
+
+.radio-set label {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-top: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.radio-select {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: #eeeeee;
+}
+
+.radio-select:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.radio-select:after {
+    display: block;
+}
+
+.radio-set .radio-select:after {
+    left: 9px;
+    top: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: tan;
+}
+
+.radio-set label:hover input ~ .radio-select {
+    background-color: #AAAAAA;
+}
+
+.radio-set input:checked ~ .radio-select {
+    background-color: black;
+}
+
+.radio-set input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.req {
+    color: #FF0000;
+}
+

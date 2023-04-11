@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Contact
+        </title>
+        <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    </head>
+
+    <body>
+        <header>
+            <h2>
+                Table of Contents
+            </h2>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Projects</a></li>
+                    <li><a href="about-me.html">About Me</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h1>
+            Want to get in contact? Fill out the form below:
+        </h1>
+
+        <p>Fields with a red asterisk (<span class="req">*</span>) are required.</p>
+            
+        <form method="GET">
+            <label>
+                Your name: <span class="req">*</span>
+                <input type="text" name="visitorName" required>
+            </label>
+    
+            <label>
+                Your email: <span class="req">*</span>
+                <input type="email" name="visitorEmail" required>
+            </label>
+
+            <label>
+                Overall, how would you rate the website?
+                <select name="pageRating">
+                    <option value="">Please rate...</option>
+                    <option value="1">Get this off the internet</option>
+                    <option value="2">You could really improve the page</option>
+                    <option value="3">About average</option>
+                    <option value="4">I liked the page a lot</option>
+                    <option value="5">Best website ever</option>                  
+                </select>
+            </label>    
+            </label>
+            <fieldset class="checkbox">
+                <legend>Which project(s) were the most interesting to you?</legend>
+                <label>
+                    Project 1
+                    <input type="checkbox" name="mostInteresting" value="p1">
+                    <span class="checkmark"></span>
+                </label>
+                <label>
+                    Project 2
+                    <input type="checkbox" name="mostInteresting" value="p2"> 
+                    <span class="checkmark"></span>  
+                </label>
+                <label>
+                    Project 3
+                    <input type="checkbox" name="mostInteresting" value="p3">   
+                    <span class="checkmark"></span>
+                </label>
+                <label>
+                    Project 4
+                    <input type="checkbox" name="mostInteresting" value="p4">   
+                    <span class="checkmark"></span>
+                </label>
+                <label>
+                    Project 5
+                    <input type="checkbox" name="mostInteresting" value="p5">   
+                    <span class="checkmark"></span>
+                </label>
+            </fieldset>
+    
+            <fieldset class="radio-set">
+                <legend>How did you find my website?</legend>
+                <label>
+                    Google Search
+                    <input type="radio" name="howFound" value="seo">
+                    <span class="radio-select"></span>  
+                </label>
+                <label>
+                    Hyperlinked from another website
+                    <input type="radio" name="howFound" value="referred">
+                    <span class="radio-select"></span>  
+                </label>
+                <label>
+                    GitHub Pages/Repository
+                    <input type="radio" name="howFound" value="github">   
+                    <span class="radio-select"></span>  
+                </label>
+                <label>
+                    Friend/Family mentioned
+                    <input type="radio" name="howFound" value="acquaintance">   
+                    <span class="radio-select"></span>  
+                </label>
+                <label>
+                    Other
+                    <input type="radio" name="howFound" value="other">   
+                    <span class="radio-select"></span>  
+                </label>
+            </fieldset>
+    
+            <label>Which page on my website did you like best?
+                <select name="bestPage">
+                    <option value="">Please make a selection...</option>
+                    <option value="about"> About Me</option>
+                    <option value="index">Projects</option>
+                    <option value="contact">Contact</option>
+                </select>
+            </label>
+
+            <label>Enter your comment/message/question below: <span class="req">*</span>
+                <textarea  name="visitorComment" rows="4" cols="50" required>I was impressed by your work and would love to get your thoughts on an idea I have and how it might be implemented...</textarea>
+            </label>
+
+            <label>
+                How many years of experience in HTML/CSS do you have?
+                <input type="number" name="visitorExperienceYears">
+            </label>
+
+            <input type="submit" value="Send it down the tubes!">
+    
+        </form>
+
+
+        <footer>
+            <p>Website created by Michael Hsieh in 2023. Last updated 3/11/23</p>
+        </footer>
+    </body>
+</html>
